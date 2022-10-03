@@ -1,0 +1,330 @@
+/* ---------------------------- NAVEGADOR -------------------- */
+.topnav {
+    background-color: black;
+    overflow: hidden;
+  }
+  .topnav a {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 13.8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: none;
+  }
+  .topnav a.active {
+    background-color: gray;
+    color: white;
+  }
+  .setCarrinho{
+    float: right;
+    margin-right: 25px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .itemCarrinho{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    display: flex;
+    padding:5px 20px;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.quantidade{
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    display: inline-block;
+    padding: 0 4px;
+    min-width: 8px;
+    max-width: 30px;
+    height: 18px;
+    border: 2px solid rgba(33,33,33,0.98);
+    border-radius: 22px;
+    text-align: center;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15.5px;
+    background-color: #c00;
+    color: #fff;
+}
+.btnDelete{
+  height: 40px;
+  width: 90px;
+  font-family:'Lucida Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+.itemCarrinhoLeft{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.carrinho img{
+   width: 50px;
+   margin-right: 10px;
+}
+.conteudoDoCarrinho{
+  background-color: white;
+  position: fixed;
+  right: 0px;
+  left: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  z-index: 3;
+  opacity: 1;
+  transition:0.2s;
+  font-family:'Lucida Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+.conteudoDoCarrinho h1{
+  letter-spacing:0.10em
+}
+.fundoCarrinho{
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100vw;
+  z-index: 2;
+  visibility: hidden;
+}
+.carrVisivel{
+   left: 60%;
+}
+.visivel{
+  visibility: visible;
+}
+.exitCarrinho{
+  cursor: pointer;
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+  @media only screen and (min-width: 360px) and (max-width: 960px){
+    .topnav a {
+        padding: 14px 13px;
+      }
+      .carrVisivel{
+        left: 0%;
+      }
+  }
+@media only screen and (min-width: 360px){
+   .topnav a{
+      padding: 14px 11px;
+    }
+
+/* ---------------------------- NAVEGADOR -------------------- */
+
+
+
+/*------------------------------- SLIDES ------------------ */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1930px; /* 1600px */
+  position: relative;
+  margin: auto;
+  z-index: 1;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.3s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 450px) {
+  .prev, .next,.text {font-size: 11px}
+}
+@media only screen and (max-width: 1900px){
+.slideshow-container {
+  max-width: 1900px;
+  }
+}
+/*------------------------------- SLIDES ------------------ */
+
+
+
+/*------------------------LANÇAMENTOS-----------------------*/
+.frete{
+  font-family: 'Impact', 'Arial Narrow Bold', sans-serif;
+  padding: 7px;
+  background-color: #11ab6b;
+  color: black;
+  text-align: center;
+  letter-spacing:0.20em
+
+}
+
+.fonth2{
+  font: var(--font_2);
+  color: rgb(var(--color_15));
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+}
+.mainProd{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin-left: 77px; /* margin-left = 77px */
+  }
+   .preço {
+    font-family: 'Arial Black';
+    color: black;
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  .card h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  }
+  @media only screen and (width: 1900px){
+    .card {
+      margin-left: 140px;
+  }
+}
+  @media only screen and (max-width: 600px) and (min-width: 960px) {
+    .card {
+    width: 70%;
+    padding: 5px;
+    margin-left: 60px;
+  }
+}
+@media only screen and (max-width: 830px) {
+    .card {
+    width: 70%;
+    padding: 5px;
+    margin-left: 53px;
+  }
+}
+/*------------------------LANÇAMENTOS-----------------------*/
+
+
+
+
+/* ---------------------------EQUIPE------------------- */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* ---------------------------EQUIPE------------------- */
+
+
+
+
+/* -------------------------FOOTER---------------------------- */
+.icon{
+    padding: 15px;
+    letter-spacing:1.20em;
+}
+footer{
+  font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  margin-top: 30px;
+  text-align: center;
+  background-color: black;
+  color: white; 
+  padding: 15px;
+  letter-spacing:0.12em;
+ }
+ @media only screen and (max-width: 600px) {
+    footer{
+        padding: 27px;
+    }
+  }
+@media only screen and (width: 768px) {
+    footer{
+        padding: 27px;
+    }
+  }
+  @media only screen and (width: 820px) {
+    footer{
+        padding: 27px;
+    }
+  }
+}
+  /* -------------------------FOOTER---------------------------- */ 

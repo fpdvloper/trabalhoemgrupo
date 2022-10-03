@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CPDG Outlet</title>
+</head>
+<body>
+    
+<!-- ------------------NAVEGADOR----------------------- -->
+<div class="topnav">
+    <a href="index.html"><b>Inicio</b></a>
+    <a href="loja.html"><b>Loja</b></a>
+    <a href="equipe.html"><b>Quem Somos</b></a>
+    <a class="active" href="contato.html"><b>Contato</b></a>
+
+    <div class="setCarrinho" onclick="mostrarCarrinho(true)">
+        <div class="quantidade"></div>
+        <img src="img/carrinho.png" height="auto" width="30px">         
+    </div>
+    <div onclick="mostrarCarrinho(true)" class="fundoCarrinho"></div>
+    <div class="conteudoDoCarrinho">
+        <img class="exitCarrinho" onclick="mostrarCarrinho(false)" src="img/x.png" height="auto" width="30px">
+    <h1 style="
+    align-items: center;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; 
+    font-size: 30px; 
+    letter-spacing:0.12em;
+    margin-top: 15px;"
+    >CARRINHO</h1>
+    <div class="carrinho"></div>
+  </div>
+  </div>
+<!-- ------------------NAVEGADOR----------------------- -->
+
+
+<!-- ------------------BANNER----------------------- -->
+
+<div class="container" style="margin-top: 16px;">
+<div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Atendimento</h1>
+      <p class="lead my-3">Dúvidas? envie-nos sua dúvida fazendo esse formulário para contato.
+        </p>
+        <br>
+          <b>Fale conosco</b>
+          </p>(21) 9999-9999<p>
+          Segunda a Sexta das 10h às 17h.
+    </div>
+  </div>
+</div>
+<!-- ------------------BANNER----------------------- -->
+
+
+<!-- ------------------FORMULÁRIO----------------------- -->
+
+  <div class="container">
+    <form >
+        <div class="form-row was-validated" >
+           <div class="form-group col-md-6">
+            <label for="validationTooltip01" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="uname" name="name" required >
+            <div class="valid-feedback">Válido</div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="validationTooltip01" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required >
+            <div class="valid-feedback">Válido</div>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="validationTooltip01" class="form-label">CPF</label>
+            <input type="text" class="form-control" id="cpf" name="cpf" required >
+            <div class="valid-feedback">Válido</div>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="validationTooltip01" class="form-label">RG</label>
+            <input type="text" class="form-control" id="uname" name="rg" required >
+            <div class="valid-feedback">Válido</div>
+
+              </div>
+              <div class="form-group col-md-3">
+                  <label for="validationTooltip01" class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" id="uname" name="date" required >
+            <div class="valid-feedback">Válido</div>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="validationTooltip01" class="form-label">Nome da Mãe</label>
+            <input type="text" class="form-control" id="uname" name="name" required >
+            <div class="valid-feedback">Válido</div>
+                  </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Envie uma mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        <div class="form-row was-validated">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Endereço</label>
+            <input type="text" class="form-control" id="inputCity" required>
+            <div class="valid-feedback">Válido</div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Estado</label>
+            <select id="inputState" class="form-control" required>
+              <option selected></option>
+              <option>Rio de Janeiro</option>
+              <option>Bahia</option>
+              <option>São Paulo</option>
+              <option>Minas Gerais</option>
+              <option>Rio Grande do Sul</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">CEP</label>
+            <input type="text" class="form-control" id="inputZip" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Clique para confirmar 
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary col-md-2" style="margin-top: 10px;">Enviar</button>
+      </form>
+</div>
+
+<!-- ------------------FORMULÁRIO----------------------- -->
+
+<!------------------------ FOOTER --------------------- -->
+<footer>
+  <div class="icon">
+      <a href="https://www.facebook.com/"><img src="img/fb.png" width="25px" height="auto"></a>
+      <a href="https://www.instagram.com/"><img src="img/inst.png" width="25px" height="auto"></a>
+      <a href="https://twitter.com/"><img src="img/tt.png" width="25px" height="auto"></a>
+      <a href="https://web.whatsapp.com"><img src="img/wpp.png" width="25px" height="auto"></a>
+      </div>
+  <span><b>© 2022 CPDG Outlet, Inc</b></span>
+</footer>
+<!-- ---------------------- FOOTER --------------------- -->
+<script src="./js/carrinho.js"></script> 
+</body>
+</html>

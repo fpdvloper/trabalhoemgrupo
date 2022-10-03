@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CPDG Outlet</title>
+</head>
+<body>
+
+<!-- ------------------NAVEGADOR----------------------- -->
+<div class="topnav">
+  <a class="active" href="index.html"><b>Inicio</b></a>
+  <a href="loja.html"><b>Loja</b></a>
+  <a href="equipe.html"><b>Quem Somos</b></a>
+  <a href="contato.html"><b>Contato</b></a>
+
+
+<div class="setCarrinho" onclick="mostrarCarrinho(true)">
+    <div class="quantidade"></div>
+    <img src="img/carrinho.png" height="auto" width="30px">         
+</div>
+<div onclick="mostrarCarrinho(true)" class="fundoCarrinho"></div>
+<div class="conteudoDoCarrinho">
+    <img class="exitCarrinho" onclick="mostrarCarrinho(false)" src="img/x.png" height="auto" width="30px">
+  <h1>CARRINHO</h1>
+  <div class="carrinho"></div>
+</div>
+</div>
+<!-- ------------------NAVEGADOR----------------------- -->
+
+<!-- FRETE -->
+<div class="frete">
+  <span>Frete Grátis na primeira compra</span>
+</div>
+<!-- FRETE -->
+
+<!-- ---------------------- SLIDES --------------------- -->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="img/black.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/oferta.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/entrega.jpg" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>  
+ <script src="js/slide.js"></script>
+<!-- ---------------------- SLIDES --------------------- -->
+
+
+<!-- ---------------------- LANÇAMENTOS --------------------- -->
+<div>
+  <h2 class="fonth2" style="text-align:center; font-size:25px;">
+  <span style="letter-spacing:0.25em;"><b>LANÇAMENTOS</b></span></h2>
+</div>
+
+<div class="mainProd">
+    <div class="card">
+        <img src="img/lan1.png" style="width: 100%">
+        <h1>CAMISA</h1>
+        <p class="preço">R$70,00</p>
+        <s style="color: darkgray">R$150,00</s>
+        <p>Camisa Básica Black</p>
+        <p><button onclick="adicionarCarrinho(
+          {  
+            id:1,
+            nome:'CAMISA PRETA',
+            img:'img/lan1.png',
+            preco:'R$70,00',
+            descricao:'Camisa Básica Black'
+          }
+        )" >Adicionar ao carrinho</button></p>
+      </div>
+    <div class="card">
+        <img src="img/lan2.png" style="width:100%">
+        <h1>BONÉ</h1>
+        <p class="preço">R$80,00</p>
+        <s style="color: darkgray">R$120,00</s>
+        <p>Boné Navy Blue</p>
+        <p><button onclick="adicionarCarrinho(
+          {  
+            id:2,
+            nome:'BONÉ AZUL-MARINHO',
+            img:'img/lan2.png',
+            preco:'R$80,00',
+            descricao:'Boné Navy Blue'
+          }
+        )" >Adicionar ao carrinho</button></p>
+    </div>
+    <div class="card">
+        <img src="img/lan3.png" style="width:100%">
+        <h1>BERMUDA</h1>
+        <p class="preço">R$120,00</p>
+        <s style="color: darkgray">R$200,00</s>
+        <p>Bermuda All Black</p>
+        <p><button onclick="adicionarCarrinho(
+          {  
+            id:3,
+            nome:'BERMUDA PRETA',
+            img:'img/lan3.png',
+            preco:'R$120,00',
+            descricao:'Bermuda All Black'
+          }
+        )" >Adicionar ao carrinho</button></p>
+    </div>
+    <div class="card" >
+        <img src="img/lan4.png" style="width:100%">
+        <h1>BONÉ</h1>
+        <p class="preço">R$80,00</p>
+        <s style="color: darkgray">R$170,00</s>
+        <p>Boné Black</p>
+        <p><button onclick="adicionarCarrinho(
+          {  
+            id:4,
+            nome:'BONÉ PRETO',
+            img:'img/lan4.png',
+            preco:'R$80,00',
+            descricao:'Boné Black'
+          }
+        )" >Adicionar ao carrinho</button></p>
+    </div>
+</div>
+<!-- ---------------------- LANÇAMENTOS ------------------- -->
+
+<!------------------------ FOOTER --------------------- --> 
+    <footer>
+        <div class="icon">
+            <a href="https://www.facebook.com/"><img src="img/fb.png" width="25px" height="auto"></a>
+            <a href="https://www.instagram.com/"><img src="img/inst.png" width="25px" height="auto"></a>
+            <a href="https://twitter.com/"><img src="img/tt.png" width="25px" height="auto"></a>
+            <a href="https://web.whatsapp.com"><img src="img/wpp.png" width="25px" height="auto"></a>
+            </div>
+        <span><b>© 2022 CPDG Outlet, Inc</b></span>
+    </footer>
+    <!-- ---------------------- FOOTER --------------------- -->
+    <script src="./js/carrinho.js"></script>    
+    <script src="js/slide.js"></script>
+    </body>
+</html>
